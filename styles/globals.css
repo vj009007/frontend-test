@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  *,
+  body {
+    font-family: "Poppins" !important;
+  }
+  .menu-list {
+    @apply flex flex-col gap-2 px-4 pt-9;
+  }
+  .menu-list a{
+    @apply p-0 no-underline  bg-transparent text-[#6c757d] text-left text-base rounded-lg min-h-[50px] border-none flex justify-start gap-4 items-center px-5 normal-case font-medium;
+  }
+  .menu-list li.active a{
+    @apply bg-[#1dbc6f] text-white text-base rounded-lg min-h-[50px] border-none;
+  }
+
+  .maincontent {
+    @apply bg-white rounded-lg border-none p-8 min-h-[calc(100vh-141px)];
+  }
+  .search-input input{
+    @apply py-2 max-w-[190px] border-[#6c757d] outline-none text-[#6c6c6c] text-base 
+  }
+  .form-style fieldset,
+  .search-input fieldset{
+    @apply  border-[#6c757d] !important
+  }
+  div#basic-menu ul{
+    @apply px-2
+  }
+  div#basic-menu ul li:hover{
+    @apply  bg-[#1dbc6f] text-white rounded
+  }
+  .form-menu#basic-menu ul{
+    @apply w-[36rem]
+  }
+  .divider{
+    @apply w-full h-[1px] bg-[#e8e8e8]
+  }
+  .items{
+    @apply bg-white px-1 pt-1 shadow rounded-md pb-3
+  }
+  .items img{
+    @apply rounded-md block w-full
+  }
+  .btn{
+    @apply no-underline text-white bg-[#1dbc6f] rounded-md p-[6px] text-center inline-block w-full text-sm
+  }
+  .main-content{
+    @apply overflow-auto max-h-[calc(100vh-77px)]
+  }
+  .items-details{
+    @apply flex items-start gap-7
+  }
+  .items-details img{
+    @apply rounded-xl max-h-[240px] min-h-[240px] object-cover
+  }
+  a.btn.style2{
+    @apply bg-[#01a053] inline-block py-3 px-3 w-auto
+  }
+  .form-style label{
+    @apply text-sm font-medium  text-[#6c757d] mb-2 block
+  }
+  .form-style input{
+    @apply py-3
+  }
+ 
+}
